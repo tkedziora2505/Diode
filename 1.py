@@ -1,4 +1,4 @@
-class Diode(object):
+class Colour(object):
     def __init__(self, r, g, b):
         self.r = r
         self.g = g
@@ -32,11 +32,11 @@ class Sekwencja(object):
             print(self.ElementySekwencji) 
         
         
-dioda1 = Diode(50,40,30)
-dioda2 = Diode(100,150,200)
-sekwencja1 = ElementSekwencji(dioda1, 70)
-sekwencja2 = ElementSekwencji(dioda2, 10)
-calosc = Sekwencja(sekwencja1)
-calosc.dodaj(sekwencja2)
+niebieski = Colour(255,255,255)
+czerwony = Colour(255,255,0)
+sekwencja1 = ElementSekwencji(czerwony, 70)
+sekwencja2 = ElementSekwencji(niebieski, 10)
+dioda1 = Sekwencja(sekwencja1)
+dioda2.dodaj(sekwencja2)
 calosc.wyswietl()
 
